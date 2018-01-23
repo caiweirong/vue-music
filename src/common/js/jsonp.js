@@ -1,5 +1,7 @@
 import originJSONP from 'jsonp';
 
+// option{param:jsonpCallback  名称}
+// data需要传的参数
 export default function jsonp(url, data, option) {
   url += (url.indexOf('?') < 0 ? '?' : '&') + param(data);
 

@@ -39,7 +39,7 @@
 
 <style scoped lang="less">
   @import "../../common/less/variable.less";
-  @import "~common/less/mixin";
+  @import "../../common/less/mixin";
 
   .search-box{
     display: flex;

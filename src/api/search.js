@@ -15,7 +15,7 @@ export function getHotKey() {
 };
 
 // 获取搜索内容的数据
-// query搜索的内容，page页码，zhida表示要不要歌手的数据，1:是
+// query搜索的内容，page页码，zhida表示要不要歌手的数据，1:是, perpage一页显示的个数
 export function search(query, page, zhida, perpage) {
   const url = 'https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp';
 

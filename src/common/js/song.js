@@ -70,7 +70,7 @@ export function createSong(musicData) {
 }
 
 // 歌手名用/隔开
-export function filterSinger(singer) {
+function filterSinger(singer) {
   let ret = [];
   if (!singer) {
     return '';

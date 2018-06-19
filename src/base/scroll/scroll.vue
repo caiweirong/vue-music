@@ -32,6 +32,10 @@
       beforeScroll: {
         type: Boolean,
         default: false
+      },
+      refreshDelay: {
+        type: Number,
+        default: 20
       }
     },
     mouted() {
@@ -90,8 +94,8 @@
     watch: {
       data() {
         setTimeout(() => {
-          this._initScroll();
-        }, 20);
+          this.refresh();
+        }, this.refreshDelay);
       }
     }
   };

@@ -10,6 +10,12 @@ import store from './store';
 
 import 'common/less/index.less';
 
+// import VConsole from 'vconsole';
+// /* eslint-disable no-unused-vars */
+// var vConsole = new VConsole();
+//
+// console.log('test');
+
 // 300ms延迟
 fastclick.attach(document.body);
 

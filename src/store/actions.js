@@ -2,7 +2,7 @@
 import * as types from './mutation-types.js';
 import {playMode} from 'common/js/config';
 import {shuffle} from 'common/js/util';
-import {saveSearch, deleteSearch, clearSearch, savePlay} from 'common/js/cache';
+import {saveSearch, deleteSearch, clearSearch, savePlay, saveFavorite, deleteFavorite} from 'common/js/cache';
 
 // 顺序列表歌曲的id需要对应到随机列表歌曲的id
 function findIndex(list, song) {
@@ -129,4 +129,12 @@ export const deleteSongList = function ({commit}) {
 
 export const savePlayHistory = function ({commit}, song) {
   commit(types.SET_PLAY_HISTORY, savePlay(song));
+};
+
+export const saveFavoriteList = function ({commit}, song) {
+  commit(types.SET_FAVORITE_LIST, saveFavorite(song));
+};
+
+export const deleteFavoriteList = function ({commit}, song) {
+  commit(types.SET_FAVORITE_LIST, deleteFavorite(song));
 };
